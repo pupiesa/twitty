@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
 import Nav from "./components/Navbar/bignav";
+import { DataProvider } from "./components/post";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +27,7 @@ export default function RootLayout({
       >
         <SessionProvider>
           <Nav />
-          {children}
+          <DataProvider>{children}</DataProvider>
         </SessionProvider>
       </body>
     </html>

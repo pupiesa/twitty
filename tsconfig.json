@@ -29,6 +29,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/(root)/page.js"
-  ],
+, "src/app/components/post.jsx"  ],
   "exclude": ["node_modules"]
 }

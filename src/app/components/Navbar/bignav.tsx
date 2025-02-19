@@ -9,7 +9,7 @@ const Nav = () => {
   const { data: session } = useSession();
 
   let navclass =
-    "bg-slate-300 text-black h-[3rem] grid grid-cols-2 grid-flow-col items-baseline fixed w-full top-0 text-[0.8em]";
+    "bg-white text-black h-[3rem] grid grid-cols-2 grid-flow-col items-baseline fixed w-full top-0 text-[0.8em]";
   const buttonclass =
     "bg-slate-500 w-[3rem] text-[0.6em] rounded-md hover:bg-white hover:text-black text-white mx-5";
   const ulclass = "flex flex-row my-auto justify-end";
