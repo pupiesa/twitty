@@ -24,11 +24,12 @@ export async function GET() {
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { user, post } = body;
+    const { user, post, img } = body;
     const newPost = await prisma.post.create({
       data: {
         user,
         post,
+        img,
       },
     });
     return new Response(JSON.stringify(newPost), {
