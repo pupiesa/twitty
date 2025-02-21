@@ -52,24 +52,6 @@ export default function Page() {
         </div>
         {/* Post */}
         <div className="text-black flex justify-center flex-col gap-y-5">
-          <div id="67b6cb43635959c97514fa5a" className="bg-white mx-10 p-3 rounded-xl">
-            <div className="flex flex-row gap-x-2">
-              <Image
-                width="20"
-                height="20"
-                src="https://lh3.googleusercontent.com/a/ACg8ocJuLcWvxKR3iEq_OHvNlwx4TMUb5PIl0b8WCCU00evvHPPtPFM=s96-c"
-                alt="userimage"
-                className="rounded-full w-auto h-auto"
-              ></Image>
-              <h1 className="">block</h1>
-              <Link href="/post/67b6cb43635959c97514fa5a">Go to post</Link>
-            </div>
-            <div className="text-[0.5rem] font-light ml-1">
-              {new Date("2025-02-20T06:27:15.182+00:00").toLocaleString('en-us')}
-            </div>
-            <div>lol</div>
-          </div>
-
           {post.map((p) => (
             <Card key={p.id} p={p} />
           ))}
